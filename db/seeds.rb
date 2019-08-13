@@ -7,6 +7,25 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Activity.destroy_all
 Location.destroy_all
+User.destroy_all
+
+errol = User.find_or_create_by(
+  id: 1,
+  user_name: "mindfulboi",
+  bio: "The mind is a tool which will become dull lest we take the time to sharpen it."
+)
+
+rocky = User.find_or_create_by(
+  id: 2,
+  user_name: "Rocky",
+  bio: "A warrior's greatest weapon is... patience."
+)
+
+paul = User.find_or_create_by(
+  id: 3,
+  user_name: "Paul",
+  bio: "Literally everything is the worst."
+)
 
 
 yoga = Activity.find_or_create_by(
