@@ -8,6 +8,7 @@
 Activity.destroy_all
 Location.destroy_all
 User.destroy_all
+Review.destroy_all
 
 errol = User.find_or_create_by(
   id: 1,
@@ -47,24 +48,27 @@ tai_chi = Activity.find_or_create_by(
 )
 
 location1 = Location.find_or_create_by(
+   id: 1,
    title: "Meditation Park",
    latitude: 38.896138,
    longitude: -77.033255,
    description: "Quiet place to meditate.",
    address: "123 Main Street, Washington D.C.",
-   rating: 4.5,
+   rating: 3.9,
    activity_id: meditation.id
 )
 location2 = Location.find_or_create_by(
+   id: 2,
    title: "Ur Yoga Studio",
    latitude: 38.899652,
    longitude: -77.019734,
    description: "An Anusara Yoga studio.",
    address: "456 Other Street, Washington D.C.",
-   rating: 4.5,
+   rating: 4.3,
    activity_id: yoga.id
 )
 location3 = Location.find_or_create_by(
+   id: 3,
    title: "Cozy Park",
    latitude: 38.902021,
    longitude: -77.030945,
@@ -72,4 +76,115 @@ location3 = Location.find_or_create_by(
    address: "4200 Long Street, Washington D.C.",
    rating: 4.5,
    activity_id: tai_chi.id
+)
+location4 = Location.find_or_create_by(
+   id: 4,
+   title: "Secret Spot",
+   latitude: 38.909021,
+   longitude: -77.030955,
+   description: "Literally hidden.",
+   address: "460 Short Street, Washington D.C.",
+   rating: 5.0,
+   activity_id: tai_chi.id
+)
+location5 = Location.find_or_create_by(
+   id: 5,
+   title: "Typical Zen Garden",
+   latitude: 38.909921,
+   longitude: -77.031955,
+   description: "Spiral out, smoker friendly.",
+   address: "601 Dabbonem Avenue, Washington D.C.",
+   rating: 5.0,
+   activity_id: meditation.id
+)
+
+review1 = Review.find_or_create_by(
+  description: "I can come here and practice without senpai noticing me.",
+  rating: 4.2,
+  user_id: 3,
+  location_id: 1
+)
+review2 = Review.find_or_create_by(
+  description: "Feels like I'm in tucked away in northern Thailand. I come here almost everyday to practice mindfulness. I am considering starting a meditation group here!",
+  rating: 4.7,
+  user_id: 1,
+  location_id: 1
+)
+review3 = Review.find_or_create_by(
+  description: "It was iight. I guess I'd come back... whatever",
+  rating: 4.7,
+  user_id: 2,
+  location_id: 1
+)
+review4 = Review.find_or_create_by(
+  description: "I can come here and practice without senpai noticing me.",
+  rating: 4.2,
+  user_id: 3,
+  location_id: 2
+)
+review5 = Review.find_or_create_by(
+  description: "Feels like I'm in tucked away in northern Thailand. I come here almost everyday to practice mindfulness. I am considering starting a meditation group here!",
+  rating: 4.7,
+  user_id: 1,
+  location_id: 2
+)
+review6 = Review.find_or_create_by(
+  description: "It was iight. I guess I'd come back... whatever",
+  rating: 4.7,
+  user_id: 2,
+  location_id: 2
+)
+review7 = Review.find_or_create_by(
+  description: "I can come here and practice without senpai noticing me.",
+  rating: 4.2,
+  user_id: 3,
+  location_id: 3
+)
+review8 = Review.find_or_create_by(
+  description: "Feels like I'm in tucked away in northern Thailand. I come here almost everyday to practice mindfulness. I am considering starting a meditation group here!",
+  rating: 4.7,
+  user_id: 1,
+  location_id: 3
+)
+review9 = Review.find_or_create_by(
+  description: "It was iight. I guess I'd come back... whatever",
+  rating: 4.7,
+  user_id: 2,
+  location_id: 3
+)
+review10 = Review.find_or_create_by(
+  description: "I can come here and practice without senpai noticing me.",
+  rating: 4.2,
+  user_id: 3,
+  location_id: 4
+)
+review11 = Review.find_or_create_by(
+  description: "Feels like I'm in tucked away in northern Thailand. I come here almost everyday to practice mindfulness. I am considering starting a meditation group here!",
+  rating: 4.7,
+  user_id: 1,
+  location_id: 4
+)
+review12 = Review.find_or_create_by(
+  description: "It was iight. I guess I'd come back... whatever",
+  rating: 4.7,
+  user_id: 2,
+  location_id: 4
+)
+review13 = Review.find_or_create_by(
+  description: "I can come here and practice without senpai noticing me.",
+  rating: 4.2,
+  user_id: 3,
+  location_id: 5
+)
+review14 = Review.find_or_create_by(
+  description: "Feels like I'm in tucked away in northern Thailand. I come here almost everyday to practice mindfulness. I am considering starting a meditation group here!",
+  rating: 4.7,
+  user_id: 1,
+  location_id: 5
+)
+review15 = Review.find_or_create_by(
+  description: "It was iight. I guess I'd come back... whatever",
+  rating: 4.7,
+  user_id: 2,
+  location_id: 5
 )
