@@ -9,6 +9,7 @@ Activity.destroy_all
 Location.destroy_all
 User.destroy_all
 Review.destroy_all
+LocationActivity.destroy_all
 
 errol = User.find_or_create_by(
   user_name: "mindfulboi",
@@ -171,4 +172,49 @@ review15 = Review.find_or_create_by(
   rating: 4.7,
   user_id: rocky.id,
   location_id: location5.id
+)
+
+location_activity1  = LocationActivity.find_or_create_by(
+  location_id: location1.id,
+  activity_id: activity1.id
+)
+
+location_activity2  = LocationActivity.find_or_create_by(
+  location_id: location1.id,
+  activity_id: activity2.id
+)
+
+location_activity3  = LocationActivity.find_or_create_by(
+  location_id: location2.id,
+  activity_id: activity2.id
+)
+
+location_activity4  = LocationActivity.find_or_create_by(
+  location_id: location3.id,
+  activity_id: activity1.id
+)
+
+location_activity5  = LocationActivity.find_or_create_by(
+  location_id: location3.id,
+  activity_id: activity2.id
+)
+
+location_activity6  = LocationActivity.find_or_create_by(
+  location_id: location4.id,
+  activity_id: activity3.id
+)
+
+location_activity7  = LocationActivity.find_or_create_by(
+  location_id: location5.id,
+  activity_id: activity1.id
+)
+
+location_activity8  = LocationActivity.find_or_create_by(
+  location_id: location5.id,
+  activity_id: activity2.id
+)
+
+location_activity9  = LocationActivity.find_or_create_by(
+  location_id: location5.id,
+  activity_id: activity3.id
 )
