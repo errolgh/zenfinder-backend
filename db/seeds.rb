@@ -27,14 +27,14 @@ paul = User.find_or_create_by(
 )
 
 
-yoga = Activity.find_or_create_by(
-  title: "Yoga",
-  description: "a Hindu spiritual and ascetic discipline, a part of which, including breath control, simple meditation, and the adoption of specific bodily postures, is widely practiced for health and relaxation."
-)
-
 meditation = Activity.find_or_create_by(
   title: "Meditation",
   description: "to engage in mental exercise (such as concentration on one's breathing or repetition of a mantra) for the purpose of reaching a heightened level of spiritual awareness, mental acuity, or mindfulness."
+)
+
+yoga = Activity.find_or_create_by(
+  title: "Yoga",
+  description: "a Hindu spiritual and ascetic discipline, a part of which, including breath control, simple meditation, and the adoption of specific bodily postures, is widely practiced for health and relaxation."
 )
 
 tai_chi = Activity.find_or_create_by(
@@ -176,45 +176,77 @@ review15 = Review.find_or_create_by(
 
 location_activity1  = LocationActivity.find_or_create_by(
   location_id: location1.id,
-  activity_id: activity1.id
+  activity_id: meditation.id
 )
 
 location_activity2  = LocationActivity.find_or_create_by(
   location_id: location1.id,
-  activity_id: activity2.id
+  activity_id: yoga.id
 )
 
 location_activity3  = LocationActivity.find_or_create_by(
   location_id: location2.id,
-  activity_id: activity2.id
+  activity_id: yoga.id
 )
 
 location_activity4  = LocationActivity.find_or_create_by(
   location_id: location3.id,
-  activity_id: activity1.id
+  activity_id: meditation.id
 )
 
 location_activity5  = LocationActivity.find_or_create_by(
   location_id: location3.id,
-  activity_id: activity2.id
+  activity_id: yoga.id
 )
 
 location_activity6  = LocationActivity.find_or_create_by(
   location_id: location4.id,
-  activity_id: activity3.id
+  activity_id: tai_chi.id
 )
 
 location_activity7  = LocationActivity.find_or_create_by(
   location_id: location5.id,
-  activity_id: activity1.id
+  activity_id: meditation.id
 )
 
 location_activity8  = LocationActivity.find_or_create_by(
   location_id: location5.id,
-  activity_id: activity2.id
+  activity_id: yoga.id
 )
 
 location_activity9  = LocationActivity.find_or_create_by(
   location_id: location5.id,
-  activity_id: activity3.id
+  activity_id: tai_chi.id
 )
+
+user_activity1 = UserActivity.find_or_create_by(
+  user_id: errol.id,
+  activity_id: meditation.id
+)
+
+user_activity2 = UserActivity.find_or_create_by(
+  user_id: errol.id,
+  activity_id: yoga.id
+)
+
+user_activity3 = UserActivity.find_or_create_by(
+  user_id: rocky.id,
+  activity_id: meditation.id
+)
+
+user_activity4 = UserActivity.find_or_create_by(
+  user_id: rocky.id,
+  activity_id: yoga.id
+)
+
+user_activity5 = UserActivity.find_or_create_by(
+  user_id: rocky.id,
+  activity_id: tai_chi.id
+)
+
+user_activity6 = UserActivity.find_or_create_by(
+  user_id: paul.id,
+  activity_id: yoga.id
+)
+
+puts "/seeds.rb ran successfully."
