@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_13_144952) do
+ActiveRecord::Schema.define(version: 2019_08_14_211300) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,6 +43,13 @@ ActiveRecord::Schema.define(version: 2019_08_13_144952) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "location_activities", force: :cascade do |t|
+    t.integer "location_id"
+    t.integer "activity_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "locations", force: :cascade do |t|
     t.string "title"
     t.float "latitude"
@@ -50,7 +57,6 @@ ActiveRecord::Schema.define(version: 2019_08_13_144952) do
     t.string "description"
     t.string "address"
     t.float "rating"
-    t.integer "activity_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -60,6 +66,13 @@ ActiveRecord::Schema.define(version: 2019_08_13_144952) do
     t.integer "rating"
     t.integer "user_id"
     t.integer "location_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "user_activities", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "activity_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

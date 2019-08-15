@@ -7,8 +7,6 @@ class CreateLocations < ActiveRecord::Migration[5.2]
       t.string :description
       t.string :address
       t.float :rating
-      t.integer :activity_id
-
       t.timestamps
     end
   end
