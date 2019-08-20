@@ -3,13 +3,17 @@ class ReviewsController < ApplicationController
     render json: Review.all.to_json(default)
   end
 
+  def show
+    render json: Review.find(params[:id]).to_json(default)
+  end
+
   def new
     render json: Review.new
   end
 
   def create
-      Review.create(review_params).to_json(default)
-      # byebug
+    render json: Review.create(review_params).to_json(default)
+
   end
 
   private
