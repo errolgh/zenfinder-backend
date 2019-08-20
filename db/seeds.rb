@@ -91,105 +91,105 @@ location5 = Location.create(
 review1 = Review.create(
   title: "Cool Place",
   description: "I can come here and practice without senpai noticing me.",
-  rating: 4.2,
+  rating: 4,
   user_id: paul.id,
   location_id: location1.id
 )
 review2 = Review.create(
   title: "Cool Place",
   description: "Feels like I'm in tucked away in northern Thailand. I come here almost everyday to practice mindfulness. I am considering starting a meditation group here!",
-  rating: 4.7,
+  rating: 4,
   user_id: errol.id,
   location_id: location1.id
 )
 review3 = Review.create(
   title: "Cool Place",
   description: "It was iight. I guess I'd come back... whatever",
-  rating: 4.7,
+  rating: 4,
   user_id: rocky.id,
   location_id: location1.id
 )
 review4 = Review.create(
   title: "Cool Place",
   description: "I can come here and practice without senpai noticing me.",
-  rating: 4.2,
+  rating: 5,
   user_id: paul.id,
   location_id: location2.id
 )
 review5 = Review.create(
   title: "Cool Place",
   description: "Great place, can't say enought about it!",
-  rating: 4.7,
+  rating: 4,
   user_id: errol.id,
   location_id: location2.id
 )
 review6 = Review.create(
   title: "Cool Place",
   description: "It was iight. I guess I'd come back... whatever",
-  rating: 4.7,
+  rating: 4,
   user_id: rocky.id,
   location_id: location2.id
 )
 review7 = Review.create(
   title: "Cool Place",
   description: "I can come here and practice without senpai noticing me.",
-  rating: 4.2,
+  rating: 3,
   user_id: paul.id,
   location_id: location3.id
 )
 review8 = Review.create(
   title: "Cool Place",
   description: "Met some cool humans here.",
-  rating: 4.7,
+  rating: 4,
   user_id: errol.id,
   location_id: location3.id
 )
 review9 = Review.create(
   title: "Cool Place",
   description: "It was iight. I guess I'd come back... whatever",
-  rating: 4.7,
+  rating: 4,
   user_id: rocky.id,
   location_id: location3.id
 )
 review10 = Review.create(
   title: "Cool Place",
   description: "I can come here and practice without senpai noticing me.",
-  rating: 4.2,
+  rating: 4,
   user_id: paul.id,
   location_id: location4.id
 )
 review11 = Review.create(
   title: "Cool Place",
   description: "Never knew this place existed.",
-  rating: 4.7,
+  rating: 4,
   user_id: errol.id,
   location_id: location4.id
 )
 review12 = Review.create(
   title: "Cool Place",
   description: "It was iight. I guess I'd come back... whatever",
-  rating: 4.7,
+  rating: 5,
   user_id: rocky.id,
   location_id: location4.id
 )
 review13 = Review.create(
   title: "Cool Place",
   description: "I can come here and practice without senpai noticing me.",
-  rating: 4.2,
+  rating: 4,
   user_id: paul.id,
   location_id: location5.id
 )
 review14 = Review.create(
   title: "Cool Place",
   description: "I come here almost everyday..",
-  rating: 4.7,
+  rating: 5,
   user_id: errol.id,
   location_id: location5.id
 )
 review15 = Review.create(
   title: "Cool Place",
   description: "It was iight. I guess I'd come back... whatever",
-  rating: 4.7,
+  rating: 5,
   user_id: rocky.id,
   location_id: location5.id
 )
