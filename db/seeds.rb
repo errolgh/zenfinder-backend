@@ -90,7 +90,7 @@ location5 = Location.create(
 
 review1 = Review.create(
   title: "Cool Place",
-  description: "I can come here and practice without senpai noticing me.",
+  description: "I can come here and practice without anyone bothering me.",
   rating: 4,
   user_id: paul.id,
   location_id: location1.id
@@ -104,14 +104,14 @@ review2 = Review.create(
 )
 review3 = Review.create(
   title: "Cool Place",
-  description: "It was iight. I guess I'd come back... whatever",
+  description: "It was nice here. I'll comeback when they start the Relaxation Station group classes!",
   rating: 4,
   user_id: rocky.id,
   location_id: location1.id
 )
 review4 = Review.create(
   title: "Cool Place",
-  description: "I can come here and practice without senpai noticing me.",
+  description: "I can come here and practice without anyone bothering me.",
   rating: 5,
   user_id: paul.id,
   location_id: location2.id
@@ -125,14 +125,14 @@ review5 = Review.create(
 )
 review6 = Review.create(
   title: "Cool Place",
-  description: "It was iight. I guess I'd come back... whatever",
+  description: "It was nice here. I'll comeback when they start the Relaxation Station group classes!",
   rating: 4,
   user_id: rocky.id,
   location_id: location2.id
 )
 review7 = Review.create(
   title: "Cool Place",
-  description: "I can come here and practice without senpai noticing me.",
+  description: "I can come here and practice without anyone bothering me.",
   rating: 3,
   user_id: paul.id,
   location_id: location3.id
@@ -146,14 +146,14 @@ review8 = Review.create(
 )
 review9 = Review.create(
   title: "Cool Place",
-  description: "It was iight. I guess I'd come back... whatever",
+  description: "It was nice here. I'll comeback when they start the Relaxation Station group classes!",
   rating: 4,
   user_id: rocky.id,
   location_id: location3.id
 )
 review10 = Review.create(
   title: "Cool Place",
-  description: "I can come here and practice without senpai noticing me.",
+  description: "I can come here and practice without anyone bothering me.",
   rating: 4,
   user_id: paul.id,
   location_id: location4.id
@@ -167,14 +167,14 @@ review11 = Review.create(
 )
 review12 = Review.create(
   title: "Cool Place",
-  description: "It was iight. I guess I'd come back... whatever",
+  description: "It was nice here. I'll comeback when they start the Relaxation Station group classes!",
   rating: 5,
   user_id: rocky.id,
   location_id: location4.id
 )
 review13 = Review.create(
   title: "Cool Place",
-  description: "I can come here and practice without senpai noticing me.",
+  description: "I can come here and practice without anyone bothering me.",
   rating: 4,
   user_id: paul.id,
   location_id: location5.id
@@ -188,7 +188,7 @@ review14 = Review.create(
 )
 review15 = Review.create(
   title: "Cool Place",
-  description: "It was iight. I guess I'd come back... whatever",
+  description: "It was nice here. I'll comeback when they start the Relaxation Station group classes!",
   rating: 5,
   user_id: rocky.id,
   location_id: location5.id
