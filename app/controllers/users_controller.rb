@@ -9,7 +9,12 @@ class UsersController < ApplicationController
     {
       :include => {
         :reviews => {
-          :except => [:updated_at, :created_at]
+          :except => [:updated_at, :created_at],
+          :include => {
+            :user => {
+
+            }
+          }
         },
         :activities => {
           :except => [:updated_at, :created_at]
